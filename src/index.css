@@ -1,0 +1,14 @@
+:root {
+ 
+}
+body{
+  background-color: rgb(231, 221, 221)!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  min-height: 100vh!important;
+  max-height: 100vh!important;
+  
+}
+
+

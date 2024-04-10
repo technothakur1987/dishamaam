@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+  font-family: "Libre Baskerville", serif;
+}
+
+#root {
+ 
+  background-color: rgb(231, 221, 221);
+ 
+  width: 100%;
+  height: 80vh;
+  
+  
+}
+.number span{
+  color: grey!important;
+  font-size: larger;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.spin_container .spinBtn {
+  position: absolute;
+  width: 3.75rem!important;
+  height: 3.75rem!important;
+  
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white!important;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  background-color: black!important;
+  box-shadow: 0 0 0 3px white; /* White border around the button */
+}
+.spin_container .spinBtn::after {
+  content: "";
+  position: absolute;
+  top: -0.90rem; /* Adjust this value to position the arrow */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-bottom: 1rem solid white; /* Increase the size of the arrow */
+ 
+  
+}
+.spin_container {
+  position: relative;
+  height: 23rem!important;
+  width: 23rem!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.spin_container .wheel {
+ 
+  overflow: hidden!important;
+ 
+}
+
+
+
+
+@media (max-width: 575.98px) { 
+  .spin_container {
+    position: relative;
+    height: 18rem!important;
+    width: 18rem!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .maindiv h2{
+    font-size: 1.0rem;
+  }
+  .number span{
+    
+    font-size: 0.6rem!important;
+    
+  }
+  .spin_container .wheel {
+ 
+    overflow: hidden!important;
+   
+  }
+ }
+
+
+
+
+

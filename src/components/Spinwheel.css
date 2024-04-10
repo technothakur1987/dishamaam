@@ -1,0 +1,80 @@
+.spin-wheel {
+    text-align: center;
+  }
+  
+  .wheel-container {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .wheel-segment {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: polygon(50% 50%, 50% 0%, 0% 0%);
+    transform-origin: 50% 100%;
+    transition: transform 3s cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+  
+  .color-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .spin-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  
+  /* Additional styles for wheel segments */
+  .wheel-segment:nth-child(1) {
+    transform: rotate(0deg);
+    background-color: #FF6633;
+    clip-path: polygon(50% 50%, 50% 0%, 0% 0%);
+  }
+  
+  .wheel-segment:nth-child(2) {
+    transform: rotate(51.42deg);
+    background-color: #FFB399;
+    clip-path: polygon(50% 50%, 0% 0%, 0% 50%);
+  }
+  
+  .wheel-segment:nth-child(3) {
+    transform: rotate(102.85deg);
+    background-color: #FF33FF;
+    clip-path: polygon(50% 50%, 0% 50%, 0% 100%);
+  }
+  
+  .wheel-segment:nth-child(4) {
+    transform: rotate(154.28deg);
+    background-color: #FFFF99;
+    clip-path: polygon(50% 50%, 0% 100%, 50% 100%);
+  }
+  
+  .wheel-segment:nth-child(5) {
+    transform: rotate(205.71deg);
+    background-color: #00B3E6;
+    clip-path: polygon(50% 50%, 50% 100%, 100% 100%);
+  }
+  
+  .wheel-segment:nth-child(6) {
+    transform: rotate(257.14deg);
+    background-color: #E6B333;
+    clip-path: polygon(50% 50%, 100% 100%, 100% 50%);
+  }
+  
+  .wheel-segment:nth-child(7) {
+    transform: rotate(308.57deg);
+    background-color: #3366E6;
+    clip-path: polygon(50% 50%, 100% 50%, 100% 0%);
+  }
+  
