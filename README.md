@@ -1,3 +1,5 @@
+live demo link https://dishamaam.netlify.app/
+
 https://www.npmjs.com/package/react-spin-to-wheel
 
 
